@@ -24,7 +24,12 @@ body {
 .destination-container {
     display: flex;
     flex-flow: wrap;
-    justify-content: center;
+   h2 {
+    margin: 0;
+    transform: rotate(-45deg);
+    transition: transform 0.5s;
+    text-shadow: 0 0 5px #01579b;
+} justify-content: center;
 }
 
 .destination {
@@ -40,11 +45,15 @@ body {
     text-align: center;
 }
 
+.destination:hover h2 {
+    transform: rotate(0deg);
+}
 h2 {
     margin: 0;
     transform: rotate(-45deg);
     text-shadow: 0 0 5px #01579b;
 }
+transition: transform 0.5s;
 
 #florida {
     background-color: #03a9f4;
